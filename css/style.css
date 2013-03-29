@@ -112,9 +112,6 @@ body{background:url(../img/body.jpg) repeat;}
 #h{height:303px;}
 #b .r1 .c1{width:572px;}
 #b .r1 .c2{width:388px;}
-#b .r2 .bc1{width:233px; margin-left:10px;}
-#b .r2 .bc2{width:471px; margin-left:3px;}
-#b .r2 .bc3{width:233px; margin-left:3px;}
 #b .r3 .bc1{width:126px;}
 #b .r3 .bc2{width:154px;}
 #b .r4 .c1{width:583px;}
@@ -147,11 +144,11 @@ body{background:url(../img/body.jpg) repeat;}
 .m3{background:#fff;}
 .m3 .h{background:url(../img/m3-h.png) no-repeat; height:58px;}
 .m3 h2{padding-left:122px;}
-.m3 .b{padding:12px 0 9px 0;}
+.m3 .b{padding:12px 0 9px 8px;}
+.m3 li{margin:0 2px; padding:1px 0;}
 .m3 li a{display:block;}
-.m3 .b li{margin-bottom:2px; *line-height:0; *font-size:0;}
-.m3 .l1{margin-left:4px;}
-.m3 .l2 h3{height:42px; line-height:42px; background:#000; color:#FA7507; padding-left:14px; width:456px; font-size:14px;}
+.m3 #tooltip{position:absolute;border:1px solid #ccc;background:#000;padding:2px;display:none; color:#FA7507; z-index:99;}
+.m3 #tooltip h3{height:42px; line-height:42px;padding-left:14px;}
 /*-------------------达人点评m4--------------------------*/
 .m4{background:#F1EEEE;}
 .m4 .h{background:url(../img/m4-h.png) no-repeat; height:62px;}
