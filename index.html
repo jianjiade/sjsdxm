@@ -67,23 +67,23 @@
                     <div class="b clearfix">
                         <div class="bc1 fl">
                             <ul>
-                                <li><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
-                                <li><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
-                                <li><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
+                                <li><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图1"></a></li>
+                                <li><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图2"></a></li>
+                                <li><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图3"></a></li>
                             </ul>
                         </div>
                         <div class="bc2 fl">
                             <ul class="li-fl clearfix">
                                 <li class="l2"><a href="#"><img src="http://placebox.es/470/238" alt=""><h3>欢迎到餐厅品尝极致美味凤眼虾</h3></a></li>
-                                <li><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
-                                <li class="l1"><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
+                                <li><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图4"></a></li>
+                                <li class="l1"><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图5"></a></li>
                             </ul>
                         </div>
                         <div class="bc3 fl">
                             <ul>
-                                <li><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
-                                <li><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
-                                <li><a href="#"><img src="http://placebox.es/233/139" alt=""></a></li>
+                                <li><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图6"></a></li>
+                                <li><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图7"></a></li>
+                                <li><a href="#"><img src="http://placebox.es/233/139" alt="" data-src="http://placebox.es/470/238" title="图8"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -236,7 +236,13 @@
 <script type="text/javascript" ignoreapd="1">
 	$(function(){
 		$(".m5 li:even").css('background', '#F5F5F5');
-		})
+        $('.m3 li').not('.li2').find('img').hover(function(){
+            var title=$(this).attr('title');
+            var src=$(this).attr('data-src');
+            $('.m3 .l2 img').attr('src',src);
+            $('.m3 .l2 h3').text(title);
+        })
+	})
 </script>
 <!--[if IE 6]>
 <script src="js/DD_belatedPNG_0.0.8a-min.js" ignoreapd="1"></script>
